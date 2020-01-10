@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  background-color: #eeeeee;
+}
+.chat-main {
+  height: calc(100vh - 70px);
+  width: 1000px;
+  background-color: white;
+  
+  margin: 0 auto;
+}
+.tweets-block {
+  height: 150px;
+  border-bottom: solid 2px rgb(225, 235, 238);
+}
+.tweets-font {
+  height: 30px;
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+.user-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.messages {
+  padding-left: 150px;
+  position: relative;
+  bottom: 30px;
+  line-height: 30px;
+}
+.fa-ellipsis-h {
+  padding-left: 680px;
+  font-size: 24px;
+}
+.reply {
+  color: rgb(50, 210, 231);
+  padding-left: 30px;
+  margin-top: 85px;
+}
+.tweets {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  bottom: 120px;
+  background-color: #23d3ff;
+  border-radius: 50%;  //丸くしている
+  margin-left: 1250px;
+}
+.fa-pen {
+  line-height: 90px;
+  text-align: center;
+  display: block; //ブロック要素にする
+  font-size: 30px;
+  color: white;
+}
