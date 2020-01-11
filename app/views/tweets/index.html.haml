@@ -1,13 +1,15 @@
-.main
-  .chat-main
-    .tweets-block
-      .tweets-font
-        .user-name
-          user name
-        .messages
-          メッセージ
-          %i.fas.fa-ellipsis-h
-      .reply
-        返信
-  .tweets
+.chat-main
+  .tweets-block
+    .user-name
+      = @tweet.name
+    .messages
+      = @tweet.text
+      %i.fas.fa-ellipsis-h
+    .reply
+      返信
+    .time
+      時間
+.tweets
+  = link_to new_tweets_path do
     %i.fas.fa-pen
+ 

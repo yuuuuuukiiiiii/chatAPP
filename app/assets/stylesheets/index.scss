@@ -11,23 +11,17 @@
   height: calc(100vh - 70px);
   width: 1000px;
   background-color: white;
-  
   margin: 0 auto;
 }
 .tweets-block {
   height: 150px;
   border-bottom: solid 2px rgb(225, 235, 238);
 }
-.tweets-font {
-  height: 30px;
-  width: 940px;
-  margin: 0 auto;
-  position: relative;
-  top: 10px;
-}
 .user-name {
   font-weight: bold;
   font-size: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 .messages {
   padding-left: 150px;
@@ -42,7 +36,12 @@
 .reply {
   color: rgb(50, 210, 231);
   padding-left: 30px;
-  margin-top: 85px;
+  margin-top: 30px;
+}
+.time {
+  position: relative;
+  bottom: 25px;
+  padding-left: 850px;
 }
 .tweets {
   width: 90px;
@@ -59,4 +58,9 @@
   display: block; //ブロック要素にする
   font-size: 30px;
   color: white;
+  text-decoration: none;
 }
+a {
+  text-decoration: none;
+  }
+  
