@@ -2,10 +2,47 @@
   height: 68px;
   border-bottom: solid 2px rgb(225, 235, 238);
 }
+.sign_in {
+  border: solid 1px rgb(50, 210, 231);
+  margin-left: 850px;
+  padding: 10px;
+  line-height: 68px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  bottom: 4px;
+}
+.sign_up {
+  border: solid 1px rgb(50, 210, 231);
+  padding: 10px;
+  line-height: 68px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  bottom: 4px;
+}
+.sign_out {
+  border: solid 1px rgb(50, 210, 231);
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  bottom: 4px;
+  margin-left: 900px;
+}
 .chatapp {
   font-size: 25px;
   text-decoration: none; //下線を消す
   margin-left: 100px;
   line-height: 68px;
   font-family: Impact;  //字体
+}
+.submit-button {
+font-size: 20px;
+background-color: rgb(50, 210, 231);
+border-style: none; //submitの枠を非表示にする
+color: white;
+height: 50px;
+width: 100px;
+margin-top: 25px;
 }

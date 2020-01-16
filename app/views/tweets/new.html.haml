@@ -2,8 +2,8 @@
   = form_tag('/tweets', method: :post) do
     %h3.new-tweets
       ツイートする
-    %textarea{:placeholder => "ツイート文を入力してください", :cols => "50", :rows => "20", :class => "new-text"}
+    %textarea{placeholder: "ツイート文を入力してください", cols: "50", rows: "20", class: "new-text"}
   %i.fas.fa-camera
-    %input{:type => "submit", :class => "new-submit"}/  
+    %input{type: "submit", class: "new-submit"}/  
     -# type=>"submit"登録ボタン type=>"text"入力フォーム row=>text枠の高さ cols=>text枠の幅
 -# :name => "text"
