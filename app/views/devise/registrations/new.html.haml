@@ -5,7 +5,7 @@
     .field
       = f.label :name
       %br/
-      = f.name_field :name, autofocus: true, autocomplete: "name", class: "text"
+      = f.text_field :name, autofocus: true, autocomplete: "name", class: "text"
     .field
       = f.label :email
       %br/
@@ -14,7 +14,7 @@
       = f.label :password
       - if @minimum_password_length
         %em
-          (#{@minimum_password_length} characters minimum)
+          (8文字)
       %br/
       = f.password_field :password, autocomplete: "new-password", class: "text"
     .field
@@ -22,6 +22,6 @@
       %br/
       = f.password_field :password_confirmation, autocomplete: "new-password", class: "text"
     .actions
-      = f.submit "Sign up"
-  = render "users/shared/links"
--# autofocus: trueとはページを読み込むと、「オートフォーカス：」の右横の１行テキスト入力欄にフォーカスを当てるので、入力欄でカーソルが点滅する。
+      = f.submit "Sign up", class: "submit-button"
+  -# autofocus: trueとはページを読み込むと、「オートフォーカス：」の右横の１行テキスト入力欄にフォーカスを当てるので、入力欄でカーソルが点滅する。
+  -# autocompleteとは、入力候補として表示される
