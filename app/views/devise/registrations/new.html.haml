@@ -19,6 +19,9 @@
       = f.password_field :password, autocomplete: "new-password", class: "text"
     .field
       = f.label :password_confirmation
+      - if @minimum_password_length
+        %em
+          (8文字)
       %br/
       = f.password_field :password_confirmation, autocomplete: "new-password", class: "text"
     .actions
