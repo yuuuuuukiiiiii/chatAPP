@@ -1,0 +1,4 @@
+- if @tweet.errors.any?
+  - @tweet.errors.full_messages.each do |message|
+    .error-message 3文字以上100文字以内でツイートしてください
+    

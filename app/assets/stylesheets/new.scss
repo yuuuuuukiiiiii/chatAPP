@@ -17,11 +17,30 @@
   margin-top: 20px;
 }
 .fa-camera {
-  margin-left: 300px;
   font-size: 25px;
+  position: relative;
+  bottom: 40px;
+  margin-left: 300px;
 }
 .new-submit {
-  height: 200px;
+  font-size: 20px;
+  background-color: rgb(50, 210, 231);
+  border-style: none; //submitの枠を非表示にする
+  color: white;
+  height: 50px;
   width: 100px;
   margin-top: 20px;
+  margin-left: 350px;
+  display: block;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+.aaa {
+  height: 500px;
+  width: 500px;
+  background-color: white;
 }
