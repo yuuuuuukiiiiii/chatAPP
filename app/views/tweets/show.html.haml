@@ -1,13 +1,15 @@
 .chat-main
   .tweets-block
     .user-name
-      = current_user.name
+      aaa
     .messages
-      ccc
+      sss
       %i.fas.fa-ellipsis-h
-    = link_to "返信", "#", class: "reply"
+    .reply
+      返信
     .time
-      = current_user.created_at
+      時間
 .tweets
   = link_to new_tweets_path do
     %i.fas.fa-pen
+ 
