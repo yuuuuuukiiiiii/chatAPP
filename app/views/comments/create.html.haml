@@ -1,0 +1,44 @@
+.comments-chat-main
+  .tweets-block
+    .user-name
+      = current_user.name
+    .messages
+      = @tweet.text
+      %i.fas.fa-ellipsis-h
+    .comments-time
+      = @tweet.created_at.strftime("%Y/%m/%d %H:%M")
+  .comments《コメント一覧》
+  .comments-scroll
+    - @comments.each do |comment|
+      .comments-user-name 
+        = comment.user.name
+      .comments-index-text 
+        = comment.text
+      .comments-index-time 
+        = comment.created_at.strftime("%Y/%m/%d %H:%M")
+  .comments-form 
+    = form_tag("/tweets/#{@tweet.id}/comments", method: :post) do
+      %h3.comments-new-tweets
+        %textarea{placeholder: "返信する内容を入力して下さい", name: "text", class: "comments-text"}
+        %input{type: "submit", class: "comments-submit"}/ 
+
+
+-# <% if current_user %>
+-#       <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
+-#         <textarea cols="30" name="text" placeholder="コメントする" rows="2"></textarea>
+-#         <input type="submit" value="SENT">
+-#       <% end %>
+-#     <% end %>
+-#     <div class="comments">   
+-#       <h4>＜コメント一覧＞</h4>
+-#       <% if @comments %>
+-#         <% @comments.each do |comment| %>
+-#           <p>
+-#             <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+-#             <%= comment.text %>
+-#           </p>
+-#         <% end %>
+-#       <% end %>
+-#     </div>
+-#   </div>
+-# </div>

@@ -1,3 +1,76 @@
-// Place all the styles related to the comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.comments-chat-main {
+  height: calc(100vh - 70px);
+  width: 1000px;
+  background-color: white;
+  margin: 0 auto;
+}
+.comments {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.comments-form {
+  background-color: rgb(145, 143, 143);
+  height: 80px;
+}
+.comments-new-tweets {
+  height: 80px;
+}
+.comments-text {
+  height: 50px;
+  width: 750px;
+  // display: block;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 15px;
+  line-height: 50px;
+}
+textarea.comments-text{
+  font-size: 20px;
+}
+.comments-submit {
+  font-size: 20px;
+  background-color: rgb(50, 210, 231);
+  border-style: none; //submitの枠を非表示にする
+  color: white;
+  height: 50px;
+  width: 100px;
+  // display: block;
+  margin-left: 810px;
+  position: relative;
+  bottom: 58px;
+}
+
+
+.comments-time {
+  padding-left: 860px;
+  font-size: 14px;
+  color: #949393;
+  padding-top: 30px;
+}
+.comments-user-name {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comments-index-text {
+  margin-left: 140px;
+  position: relative;
+  bottom: 44px;
+  margin-right: 150px;
+}
+.comments-index-time {
+  padding-left: 860px;
+  font-size: 14px;
+  color: #949393;
+  position: relative;
+  bottom: 65px;
+}
+.comments-scroll {
+  width: 1000px;
+  height: 469px;
+  overflow: scroll;
+}
