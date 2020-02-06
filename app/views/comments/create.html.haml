@@ -1,26 +1,4 @@
-.comments-chat-main
-  .tweets-block
-    .user-name
-      = current_user.name
-    .messages
-      = @tweet.text
-      %i.fas.fa-ellipsis-h
-    .comments-time
-      = @tweet.created_at.strftime("%Y/%m/%d %H:%M")
-  .comments《コメント一覧》
-  .comments-scroll
-    - @comments.each do |comment|
-      .comments-user-name 
-        = comment.user.name
-      .comments-index-text 
-        = comment.text
-      .comments-index-time 
-        = comment.created_at.strftime("%Y/%m/%d %H:%M")
-  .comments-form 
-    = form_tag("/tweets/#{@tweet.id}/comments", method: :post) do
-      %h3.comments-new-tweets
-        %textarea{placeholder: "返信する内容を入力して下さい", name: "text", class: "comments-text"}
-        %input{type: "submit", class: "comments-submit"}/ 
+= render "comment"
 
 
 -# <% if current_user %>

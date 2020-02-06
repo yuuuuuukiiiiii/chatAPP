@@ -1,0 +1,25 @@
+.comments-chat-main
+  .tweets-block
+    .user-name
+      = @tweet.user.name
+    .messages
+      = @tweet.text
+    - if user_signed_in? && current_user.id == @tweet.user_id
+      = link_to "編集", "/tweets/#{@tweet.id}/edit", method: :get, class: "comments-edit"
+      = link_to "削除", "/tweets/#{@tweet.id}", method: :delete, class: "comments-delete"
+    .comments-time
+      = @tweet.created_at.strftime("%Y/%m/%d %H:%M")
+  .comments《コメント一覧》
+  .comments-scroll
+    - @comments.each do |comment|
+      .comments-user-name 
+        = comment.user.name
+      .comments-index-text 
+        = comment.text
+      .comments-index-time
+        = comment.created_at.strftime("%Y/%m/%d %H:%M")
+  .comments-form
+    = form_tag("/tweets/#{@tweet.id}/comments", method: :post) do
+      %h3.comments-new-tweets
+        %textarea{placeholder: "返信する内容を入力して下さい", name: "text", class: "comments-text"}
+        %input{type: "submit", class: "comments-submit"}/ 
