@@ -8,7 +8,6 @@ class TweetsController < ApplicationController
   end
 
   def show
-    # @tweet = Tweet.find(params[:id])
   end
 
   def new
@@ -21,6 +20,21 @@ class TweetsController < ApplicationController
       redirect_to :root
     else
       render 'new'
+    end
+  end
+
+  def edit
+    # @tweet = Tweet.new
+    @tweet = Tweet.find(params[:id])
+  end
+
+  def update
+    @tweet = Tweet.find(params[:id])
+    @tweets = Tweet.all.order("created_at DESC")
+    if @tweet.update(tweet_params)
+    redirect_to tweets_path
+    else
+    render 'edit'
     end
   end
 

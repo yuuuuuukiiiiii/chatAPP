@@ -38,16 +38,11 @@
   bottom: 25px;
   left: 110px;
 }
-.reply {
-  color: rgb(50, 210, 231);
-  position: relative;
-  top: 45px;
-  right: 120px;
-}
 .time {
   padding-left: 860px;
   font-size: 14px;
   color: #949393;
+  margin-top: 36px;
 }
 .tweets {
   width: 90px;
@@ -69,3 +64,26 @@
 a {
   text-decoration: none;
   }
+.edit {
+  color: rgb(50, 210, 231);
+  border: solid 1px rgb(50, 210, 231);
+  padding: 3px;
+  margin-left: 790px;
+  position: relative;
+  bottom: 52px;
+  font-size: 14px;
+}
+.delete {
+  color: rgb(50, 210, 231);
+  border: solid 1px rgb(50, 210, 231);
+  padding: 3px;
+  position: relative;
+  bottom: 52px;
+  font-size: 14px;
+}
+.reply {
+  color: rgb(50, 210, 231);
+  margin-left: 30px;
+  position: relative;
+  top: 50px;
+}
