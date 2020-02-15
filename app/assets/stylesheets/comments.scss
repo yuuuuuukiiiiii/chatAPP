@@ -68,7 +68,8 @@ textarea.comments-text{
   padding: 3px;
   // position: relative;
   // bottom: 52px;
-  margin-left: 857px;
+  position: relative;
+  left: 683px;
   font-size: 14px;
   // position: fixed;
 }
@@ -76,6 +77,8 @@ textarea.comments-text{
   color: rgb(50, 210, 231);
   border: solid 1px rgb(50, 210, 231);
   padding: 3px;
+  position: relative;
+  left: 683px;
   // position: relative;
   // bottom: 52px;
   font-size: 14px;
@@ -85,7 +88,7 @@ textarea.comments-text{
   padding-left: 860px;
   font-size: 14px;
   color: #949393;
-  margin-top: 36px;
+  margin-top: 60px;
   // position: relative;
   // top: 23px;
   // position: fixed;

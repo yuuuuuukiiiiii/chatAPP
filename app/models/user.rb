@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, password_length: 8..16
   has_many :tweets
   has_many :comments
+  validates :name, length: { in: 1..6 } 
 end

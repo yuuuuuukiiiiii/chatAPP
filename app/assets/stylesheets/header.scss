@@ -4,31 +4,50 @@
 }
 .sign_in {
   border: solid 1px rgb(50, 210, 231);
-  margin-left: 850px;
-  padding: 10px;
-  line-height: 68px;
+  height: 40px;
+  width: 90px;
+  display: inline-block;
+  margin-left: 842px;
   color: black;
   font-weight: bold;
   position: relative;
   bottom: 4px;
+  text-align: center;
+  line-height: 40px;
 }
 .sign_up {
   border: solid 1px rgb(50, 210, 231);
-  padding: 10px;
-  line-height: 68px;
+  height: 40px;
+  width: 90px;
+  display: inline-block;
   color: black;
   font-weight: bold;
   position: relative;
   bottom: 4px;
+  text-align: center;
+  line-height: 40px;
 }
 .sign_out {
   border: solid 1px rgb(50, 210, 231);
-  padding: 10px;
+  height: 40px;
+  width: 90px;
   color: black;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 60px;
   position: relative;
-  bottom: 4px;
-  margin-left: 900px;
+  bottom: 32px;
+  text-align: center;
+  line-height: 40px;
+}
+.bbb {
+  height: 40px;
+  width: 90px;
+  color: black;
+  font-weight: bold;
+  margin-left: 1068px;
+  position: relative;
+  bottom: 47px;
 }
 .chatapp {
   font-size: 25px;
