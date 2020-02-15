@@ -1,0 +1,28 @@
+.destroy-white {
+  height: 250px;
+  width: 550px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+.destroy-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 30px;
+}
+.destroy-tweet {
+  height: 80px;
+  width: 250px;
+  border: solid 2px rgb(50, 210, 231);
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 23px;
+  background-color: rgb(50, 210, 231);
+  color: white;
+}

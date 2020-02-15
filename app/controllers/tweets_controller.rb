@@ -7,8 +7,9 @@ class TweetsController < ApplicationController
     # @tweets = Tweet.includes(:user).order("created_at DESC")
   end
 
-  def show
-  end
+  # def show
+  #   @tweets = Tweet.all
+  # end
 
   def new
     @tweet = Tweet.new
@@ -38,6 +39,12 @@ class TweetsController < ApplicationController
     end
   end
 
+  def destroy
+    tweet = Tweet.find(params[:id])
+    if tweet.destroy
+    end
+  end
+
 private
   def tweet_params
     params.permit(:text)
@@ -50,3 +57,4 @@ end
 #   def tweet_params
 #     params.permit(:image, :text)
 #   end
+# tweet.user_id == current_user.id
