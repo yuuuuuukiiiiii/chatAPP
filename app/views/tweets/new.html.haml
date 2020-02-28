@@ -1,14 +1,7 @@
 .new-field
-  -# - if @tweet.errors.any?
-  -#   .aaa
   = form_for(@tweet) do |f|
     = render 'layouts/error'
     %h3.new-tweets
       ツイートする
     %textarea{placeholder: "ツイート文を入力してください", name: "text", class: "new-text"}
     %input{type: "submit", class: "new-submit"}/  
-    %i.fas.fa-camera
-      = f.file_field :image
-    -# %i.fas.fa-camera
-    -# type=>"submit"登録ボタン type=>"text"入力フォーム row=>text枠の高さ cols=>text枠の幅 name => フォームの部品
-  -# :name => "text"

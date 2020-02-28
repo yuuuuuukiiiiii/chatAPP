@@ -1,3 +1,4 @@
+= render 'layouts/notifications'
 .chat-main
   - @tweets.each do |tweet|
     .tweets-block
@@ -5,15 +6,19 @@
         = tweet.user.name
       .messages
         = tweet.text
-      = link_to "返信", "tweets/#{tweet.id}/comments", class: "reply"
+      - if user_signed_in?
+        = link_to "返信", "tweets/#{tweet.id}/comments", class: "reply"
+      - else 
+        = link_to "返信", "#", class: "reply"
       - if user_signed_in? && current_user.id == tweet.user_id
         = link_to "編集", "/tweets/#{tweet.id}/edit", method: :get, class: "edit"
         = link_to "削除", "/tweets/#{tweet.id}", method: :delete, class: "delete"
       .time
         = tweet.created_at.strftime("%Y/%m/%d %H:%M")
-.tweets
-  = link_to new_tweet_path do
-    %i.fas.fa-pen
+- if user_signed_in?
+  .tweets
+    = link_to new_tweet_path do
+      %i.fas.fa-pen
     
 -# - if user_signed_in? && current_user.id == tweet.user_id
 -#   %li

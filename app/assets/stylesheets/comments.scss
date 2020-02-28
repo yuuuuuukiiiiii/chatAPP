@@ -6,11 +6,8 @@
 }
 .comments {
   font-size: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 10px;
 }
-
 .comments-form {
   background-color: rgb(145, 143, 143);
   height: 80px;
@@ -21,10 +18,8 @@
 .comments-text {
   height: 50px;
   width: 750px;
-  // display: block;
-  margin-left: 20px;
   padding-left: 20px;
-  margin-top: 15px;
+  margin: 15px 0 0 20px;
   line-height: 50px;
 }
 textarea.comments-text{
@@ -33,23 +28,17 @@ textarea.comments-text{
 .comments-submit {
   font-size: 20px;
   background-color: rgb(50, 210, 231);
-  border-style: none; //submitの枠を非表示にする
+  border-style: none; 
   color: white;
   height: 50px;
   width: 100px;
-  // display: block;
   margin-left: 810px;
   position: relative;
   bottom: 58px;
 }
-
-
-
 .comments-user-name {
   font-weight: bold;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 20px;
 }
 .comments-index-text {
   margin-left: 140px;
@@ -66,32 +55,23 @@ textarea.comments-text{
   color: rgb(50, 210, 231);
   border: solid 1px rgb(50, 210, 231);
   padding: 3px;
-  // position: relative;
-  // bottom: 52px;
   position: relative;
-  left: 683px;
+  left: 655px;
   font-size: 14px;
-  // position: fixed;
 }
 .comments-delete {
   color: rgb(50, 210, 231);
   border: solid 1px rgb(50, 210, 231);
   padding: 3px;
   position: relative;
-  left: 683px;
-  // position: relative;
-  // bottom: 52px;
+  left: 655px;
   font-size: 14px;
-  // position: fixed;
 }
 .comments-time {
   padding-left: 860px;
   font-size: 14px;
   color: #949393;
   margin-top: 60px;
-  // position: relative;
-  // top: 23px;
-  // position: fixed;
 }
 
 .comments-index-time {

@@ -1,7 +1,6 @@
 .new-field {
   height: 430px;
   width: 500px;
-  background-color: white;
   margin: 0 auto;
   position: relative;
   top: 80px;
@@ -27,12 +26,11 @@
 .new-submit {
   font-size: 20px;
   background-color: rgb(50, 210, 231);
-  border-style: none; //submitの枠を非表示にする
+  border-style: none;
   color: white;
   height: 50px;
   width: 100px;
-  margin-top: 20px;
-  margin-left: 350px;
+  margin: 20px 0 0 350px;
   display: block;
 }
 .error-message {
