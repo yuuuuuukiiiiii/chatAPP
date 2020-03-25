@@ -52,3 +52,8 @@ production:
   database: chatAPP_production
   username: chatAPP
   password: <%= ENV['CHATAPP_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: 5
